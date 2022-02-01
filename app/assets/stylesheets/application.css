@@ -1,15 +1,139 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+:root {
+  --main-bg-color: rgba(0, 0, 0, 0.568);
+  --main-txt-color: #ffff;
+}
+
+html {
+  background-color: black !important;
+}
+
+body {
+  margin: 0px 30px;
+  min-height: 900px;
+  background-color: red;
+}
+
+/*Header*/
+
+.navbar {
+  height: 80px;
+  background-color: var(--main-bg-color);
+}
+#navbarNav {
+  justify-content: end;
+}
+
+.navbar-brand {
+  color: var(--main-txt-color);
+}
+
+.brand-logo {
+  margin-right: 5px;
+}
+
+.nav-link {
+  color: var(--main-txt-color) !important;
+  text-decoration: none;
+}
+
+/*Section 1*/
+
+.main-container {
+  margin-top: 200px;
+  margin-bottom: 215px;
+}
+
+.main-section-col {
+  background-color: rgba(0, 0, 0, 0.425);
+  color: var(--main-txt-color);
+  margin-top: 230px;
+  padding: 50px 50px;
+  border-radius: 15px;
+}
+
+.main-title {
+  margin-bottom: 20px;
+  color: var(--main-txt-color);
+  text-align: center;
+}
+.main-text {
+  font-size: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.main-btn {
+  color: var(--main-txt-color);
+  font-size: 20px;
+  margin: 0;
+}
+.main-box {
+  border: 1px solid var(--main-txt-color);
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 6px 12px;
+}
+
+/*Activities*/
+
+.main-title-activities {
+  margin: 40px 0px;
+  color: var(--main-txt-color);
+  text-align: center;
+}
+
+.activities-sports {
+  width: 190px;
+  height: 180px;
+  background-color: white;
+  border: red solid 1px;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 5px;
+  color: red;
+}
+
+.sport-title {
+  margin: 0px;
+}
+
+/* Sign in */
+
+.login {
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+  border-radius: 12px;
+  margin: 230px 0px;
+  padding: 40px 0px;
+}
+
+/* Sign Up */
+
+.form-sign {
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+  border-radius: 12px;
+  margin: 70px 0px;
+  padding: 70px 0px;
+}
+
+/*Footer*/
+
+.nav-bottom {
+  height: 100px;
+}
+
+.copyrights {
+  color: var(--main-txt-color);
+  font-size: 15px;
+  margin: 0;
+}
+
+.social-icon {
+  color: var(--main-txt-color);
+  font-size: 20px;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
