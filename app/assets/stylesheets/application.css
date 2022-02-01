@@ -4,13 +4,14 @@
 }
 
 html {
-  background-color: black !important;
+  background-color: black;
 }
 
 body {
   margin: 0px 30px;
   min-height: 900px;
-  background-color: red;
+  background-repeat: no-repeat;
+  background-image: url("background-image.png");
 }
 
 /*Header*/
