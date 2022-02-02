@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   get '/home', to: 'home#index'
   get '/signin', to: 'signin#index'
-  get '/signup', to: 'signup#index'
+
   get '/activites', to: 'activities#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

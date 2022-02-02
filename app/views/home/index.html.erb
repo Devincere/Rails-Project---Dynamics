@@ -48,28 +48,27 @@
               <li class="nav-item">
                 <a class="nav-link navlink-top" href="/home">Home</a>
               </li>
+
+              <% if user_signed_in? %>
               <li class="nav-item">
-                <a class="nav-link navlink-top" href="/signin">Sign In</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navlink-top" href="/signup">Register</a>
-              </li>
-              <li class="nav-item">
-                <%= link_to "Sign Up Test", new_user_registration_path ,
-                class:"nav-link" %>
-              </li>
-              <li class="nav-item">
-                <%= link_to "Sign In Test", new_user_session_path ,
-                class:"nav-link" %>
-              </li>
-              <li class="nav-item">
-                <%= link_to "Sign Out Test", destroy_user_session_path, method:
+                <%= link_to "Sign Out", destroy_user_session_path , method:
                 :delete, class:"nav-link" %>
               </li>
               <li class="nav-item">
-                <%= link_to "Edit Profile Test", edit_user_registration_path ,
+                <%= link_to "Edit Profile", edit_user_registration_path ,
                 class:"nav-link" %>
               </li>
+
+              <% else %>
+              <li class="nav-item">
+                <%= link_to "Sign Up", new_user_registration_path ,
+                class:"nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "Sign In", new_user_session_path , class:"nav-link"
+                %>
+              </li>
+              <% end %>
             </ul>
           </div>
         </div>
