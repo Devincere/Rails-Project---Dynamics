@@ -149,12 +149,55 @@ ul#list-error {
 .signin-btn {
   margin-top: 20px;
 }
+
+/* Forgot Password */
+
+.forgotpwd-container {
+  margin-top: 80px;
+}
+
+.forgotpwd-box {
+  background-color: var(--main-bg-color);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.forgotpwd-title {
+  color: var(--main-txt-color);
+  margin-bottom: 20px;
+}
+
+.forgotpwd-txt {
+  color: var(--main-txt-color);
+}
+
+.reset-btn {
+  margin-top: 30px;
+}
+
 /*Edit User*/
 
-.edit-form {
+.edituser-container {
+  margin-top: 70px;
+}
+
+.edituser-box {
+  background-color: var(--main-bg-color);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.edituser-title {
   color: var(--main-txt-color);
-  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+}
+.edituser-txt {
+  color: var(--main-txt-color);
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.edituser-btn {
+  margin-top: 20px;
 }
 
 /*Activities*/
