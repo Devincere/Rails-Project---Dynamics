@@ -9,9 +9,31 @@ html {
 
 body {
   margin: 0px 30px;
-  min-height: 900px;
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
   background-repeat: no-repeat;
   background-image: url("background-image.png");
+}
+
+/* Devise */
+
+#error_explanation {
+  color: rgb(219, 1, 1);
+  list-style-type: none;
+  margin: 0px 40px;
+  padding: 15px;
+  background-color: rgba(255, 100, 100, 0.486);
+  border-radius: 12px;
+}
+
+ul#list-error {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.devise-links {
+  color: var(--main-txt-color);
 }
 
 /*Header*/
@@ -76,6 +98,65 @@ body {
   padding: 6px 12px;
 }
 
+/* Sign Up */
+
+.signup-container {
+  margin-top: 80px;
+}
+
+.signup-box {
+  background-color: var(--main-bg-color);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.signup-title {
+  color: var(--main-txt-color);
+  margin-bottom: 20px;
+}
+
+.signup-text {
+  color: var(--main-txt-color);
+  margin: 10px 0px;
+}
+
+.signup-btn {
+  margin-top: 30px;
+}
+
+/* Sign In */
+
+.signin-container {
+  margin-top: 100px;
+}
+
+.signin-box {
+  background-color: var(--main-bg-color);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.signin-title {
+  color: var(--main-txt-color);
+  margin-bottom: 20px;
+}
+
+.signin-text {
+  color: var(--main-txt-color);
+  margin: 15px;
+}
+
+.signin-btn {
+  margin-top: 20px;
+}
+/*Edit User*/
+
+.edit-form {
+  color: var(--main-txt-color);
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+}
+
 /*Activities*/
 
 .main-title-activities {
@@ -98,26 +179,6 @@ body {
 
 .sport-title {
   margin: 0px;
-}
-
-/* Sign in */
-
-.login {
-  color: var(--main-txt-color);
-  background-color: var(--main-bg-color);
-  border-radius: 12px;
-  margin: 230px 0px;
-  padding: 40px 0px;
-}
-
-/* Sign Up */
-
-.form-sign {
-  color: var(--main-txt-color);
-  background-color: var(--main-bg-color);
-  border-radius: 12px;
-  margin: 70px 0px;
-  padding: 70px 0px;
 }
 
 /*Footer*/
