@@ -202,6 +202,25 @@ ul#list-error {
 
 /*Activities*/
 
+.new-activity-container{
+  margin-top: 70px;
+}
+
+.new-activity-box{
+  background-color: var(--main-bg-color);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.new-activity-title{
+  color: var(--main-txt-color);
+  margin-bottom: 20px;
+}
+
+.new-activity-txt{
+  color: var(--main-txt-color);
+}
+
 .main-title-activities {
   margin: 40px 0px;
   color: var(--main-txt-color);

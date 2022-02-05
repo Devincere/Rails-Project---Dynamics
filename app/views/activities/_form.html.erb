@@ -1,16 +1,15 @@
 <%= form_with model: activity do |form|%>
-<div class="mb-3">
-  <%= form.label :name %>
-  <%= form.select(:name, ['Walking', 'Swimming', 'Running'], {include_blank: 'Choose one'}, { :class => 'form-control'}) %>
-</div>
-<div class="mb-3">
-  <%= form.label :datetime %>
-  <%= form.date_field(:datetime, { :class => 'form-control'}) %>
-</div>
-<div class="mb-3">
-  <%= form.label :duration %>
-  <%= form.number_field(:duration, { :class => 'form-control'}) %>
-</div>
-
-<%= form.submit class: 'btn btn-primary mt-5' %>
+  <div class="mb-3">
+    <%= form.label :name, class:"new-activity-txt" %>
+    <%= form.select(:name, ['Walking', 'Swimming', 'Running'], {include_blank: 'Choose one'}, { :class => 'form-control'}) %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :datetime, class:"new-activity-txt" %>
+    <%= form.date_field(:datetime, { :class => 'form-control'}) %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :duration, class:"new-activity-txt" %>
+    <%= form.number_field(:duration, { :class => 'form-control'}) %>
+  </div>
+  <%= form.submit class: 'btn btn-outline-light mt-5' %>
 <% end %>
