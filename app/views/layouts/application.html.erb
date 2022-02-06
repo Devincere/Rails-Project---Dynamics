@@ -25,7 +25,7 @@
   <body>
     <header>
       <nav class="navbar nav-top navbar-expand-sm navbar-dark">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand text-center" href="/">
             <img
               src="/img/workout-icon.jpeg"
@@ -52,8 +52,14 @@
               <li class="nav-item">
                 <a class="nav-link navlink-top" href="/">Home</a>
               </li>
-
+              
               <% if user_signed_in? %>
+              <li class="nav-item">
+                <a class="nav-link navlink-top" href="/activities">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlink-top" href="/activities/new">Log New Activity</a>
+              </li>
               <li class="nav-item">
                 <%= link_to "Sign Out", destroy_user_session_path, method: :get , class:"nav-link" %>
               </li>

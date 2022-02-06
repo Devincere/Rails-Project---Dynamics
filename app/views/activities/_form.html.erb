@@ -11,5 +11,6 @@
     <%= form.label :duration, class:"new-activity-txt" %>
     <%= form.number_field(:duration, { :class => 'form-control'}) %>
   </div>
+  <%= form.number_field :user_id, id: :activities_user_id, class:"form-control" , value: current_user.id, type: :hidden %>
   <%= form.submit class: 'btn btn-outline-light mt-5' %>
 <% end %>
