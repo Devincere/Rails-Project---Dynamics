@@ -17,7 +17,7 @@
             <td scope="col"> <%= activity.name %></td>
             <td scope="col"> <%= activity.duration %>mins</td>
             <td scope="col"><%= link_to "Edit", edit_activity_path(activity), class:"btn btn-primary btn-small" %>
-              <%= link_to "Delete", activity_path(activity), class:"btn btn-danger btn-small", method: :delete, data: {confirm: "are you sure ?"} %></td>
+              <%= button_to "Delete", activity_path(activity), class:"btn btn-danger btn-small", method: :delete, data: {confirm: "are you sure ?"} %></td>
           </tr>
         <% end %>
       </tbody>
