@@ -1,7 +1,7 @@
 <section>
   <h1 class="main-title-activities">Activities</h1>
   <div class="container">
-    <table class="table bg-light">
+    <table class="table table-dark table-striped text-center align-middle">
       <thead>
         <tr>
           <th scope="col">Date</th>
@@ -15,9 +15,9 @@
           <tr>
             <td scope="col"> <%= activity.datetime %></td>
             <td scope="col"> <%= activity.name %></td>
-            <td scope="col"> <%= activity.duration %></td>
-            <td scope="col"> <%= link_to "Delete", activity_path(activity), class:"btn btn-danger btn-small", method: :delete, data: {confirm: "are you sure ?"} %> 
-            <%= link_to "Edit", edit_activity_path(activity), class:"btn btn-primary btn-small" %></td>
+            <td scope="col"> <%= activity.duration %>mins</td>
+            <td scope="col"><%= link_to "Edit", edit_activity_path(activity), class:"btn btn-primary btn-small" %>
+              <%= link_to "Delete", activity_path(activity), class:"btn btn-danger btn-small", method: :delete, data: {confirm: "are you sure ?"} %></td>
           </tr>
         <% end %>
       </tbody>

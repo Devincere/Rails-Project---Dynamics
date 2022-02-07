@@ -227,20 +227,8 @@ ul#list-error {
   text-align: center;
 }
 
-.activities-sports {
-  width: 190px;
-  height: 180px;
-  background-color: white;
-  border: red solid 1px;
-  border-radius: 12px;
-  text-align: center;
-  padding: 10px 10px;
-  margin: 5px;
-  color: red;
-}
-
-.sport-title {
-  margin: 0px;
+.table{
+  border: solid 3px;
 }
 
 /*Footer*/
