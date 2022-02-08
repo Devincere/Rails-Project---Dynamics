@@ -70,14 +70,12 @@ ul#list-error {
 /*Section 1*/
 
 .main-container {
-  margin-top: 200px;
-  margin-bottom: 215px;
+  margin: 110px 0px;
 }
 
 .main-section-col {
   background-color: rgba(0, 0, 0, 0.425);
   color: var(--main-txt-color);
-  margin-top: 230px;
   padding: 50px 50px;
   border-radius: 15px;
 }
@@ -109,7 +107,7 @@ ul#list-error {
 /* Sign Up */
 
 .signup-container {
-  margin-top: 80px;
+  margin: 120px 0px;
 }
 
 .signup-box {
@@ -135,7 +133,7 @@ ul#list-error {
 /* Sign In */
 
 .signin-container {
-  margin-top: 100px;
+  margin: 120px 0px;
 }
 
 .signin-box {
@@ -186,7 +184,8 @@ ul#list-error {
 /*Edit User*/
 
 .edituser-container {
-  margin-top: 70px;
+  margin-bottom: 120px;
+  margin-top: 40px;
 }
 
 .edituser-box {

@@ -1,6 +1,6 @@
 <div class="container edituser-container">
   <div class="row justify-content-center">
-    <div class="col-4  text-center edituser-box">
+    <div class="col-md-4 col-sm-12 text-center edituser-box">
       <h2 class="field edituser-title">Edit <%= resource_name.to_s.humanize %></h2>
       <%= form_for(resource, as: resource_name, url:
           registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -38,12 +38,12 @@
       </div>
       <div class="actions edituser-btn"><%= f.submit "Update", class:"btn btn-outline-light" %></div>
       <p class="edituser-txt">
-          Unhappy? </p>
-      <div class="edituser-btn"> 
- <%= button_to "Cancel my account",
+        Unhappy? </p>
+      <div class="edituser-btn">
+        <%= button_to "Cancel my account",
             registration_path(resource_name), class:"btn btn-outline-light", data: { confirm: "Are you sure?"
             }, method: :delete %>
- </div>
+      </div>
     <% end %>
   </div>
 </div>

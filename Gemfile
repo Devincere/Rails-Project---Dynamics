@@ -9,6 +9,10 @@ gem 'rails', '~> 7.0.1'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
+#Meta tags
+gem 'meta-tags'
+
+
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3', '~> 1.4'
 #PostgreSQL
