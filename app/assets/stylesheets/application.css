@@ -39,9 +39,13 @@ ul#list-error {
 /*Header*/
 
 .navbar {
-  height: 80px;
   background-color: var(--main-bg-color);
 }
+
+.navbar-nav {
+  justify-content: end;
+}
+
 #navbarNav {
   justify-content: end;
 }
@@ -52,6 +56,10 @@ ul#list-error {
 
 .brand-logo {
   margin-right: 5px;
+}
+
+.nav-item {
+  text-align: end;
 }
 
 .nav-link {
@@ -202,22 +210,22 @@ ul#list-error {
 
 /*Activities*/
 
-.new-activity-container{
+.new-activity-container {
   margin-top: 70px;
 }
 
-.new-activity-box{
+.new-activity-box {
   background-color: var(--main-bg-color);
   border-radius: 12px;
   padding: 30px;
 }
 
-.new-activity-title{
+.new-activity-title {
   color: var(--main-txt-color);
   margin-bottom: 20px;
 }
 
-.new-activity-txt{
+.new-activity-txt {
   color: var(--main-txt-color);
 }
 
@@ -227,8 +235,15 @@ ul#list-error {
   text-align: center;
 }
 
-.table{
+.table {
   border: solid 3px;
+}
+.activity-btn-action {
+  margin: 5px;
+}
+
+.button_to {
+  display: inline;
 }
 
 /*Footer*/
