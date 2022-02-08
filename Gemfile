@@ -18,8 +18,6 @@ gem 'meta-tags'
 #PostgreSQL
 gem "pg"
 
-#Webpacker
-gem 'webpacker'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
