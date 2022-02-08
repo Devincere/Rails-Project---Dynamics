@@ -17,7 +17,7 @@
             <td> <%= activity.name %></td>
             <td> <%= activity.duration %>mins</td>
             <td>
-              <%= button_to "Edit", edit_activity_path(activity), class:"activity-btn-action btn btn-outline-warning btn-sm" %>
+              <%= button_to "Edit", edit_activity_path(activity), class:"activity-btn-action btn btn-outline-warning btn-sm", method: :get %>
               <%= button_to "Delete", activity_path(activity), class:"activity-btn-action btn btn-outline-danger btn-sm", method: :delete, data: { turbo_confirm: 'Are you sure?' }%></td>
           </tr>
         <% end %>

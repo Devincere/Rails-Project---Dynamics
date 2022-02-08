@@ -6,11 +6,19 @@
         <p class="main-text">
           Bring the gym home with unlimited access to Dynamics. A simple way to log your workout !
         </p>
-        <%= link_to "Join us", new_user_registration_path ,
+        <% if user_signed_in? %>
+          <%= link_to "See your activity", activities_path,
               class:"btn btn-outline-light btn-lg" , 
               tabindex:"-1" , 
               role:"button" 
                %>
+        <% else %>
+          <%= link_to "Join us", new_user_registration_path ,
+              class:"btn btn-outline-light btn-lg" , 
+              tabindex:"-1" , 
+              role:"button" 
+               %>
+        <% end %>
       </div>
     </div>
   </div>
